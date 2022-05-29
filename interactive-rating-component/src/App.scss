@@ -1,0 +1,15 @@
+@import './styles/variables';
+
+.app {
+    height: 100vh;
+    background-color: $veryDarkBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 15px;
+
+    color: $mediumGrey;
+}

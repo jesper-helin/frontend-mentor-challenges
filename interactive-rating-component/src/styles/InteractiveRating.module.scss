@@ -1,0 +1,123 @@
+@import './variables';
+
+.container {
+   background-color: lighten($veryDarkBlue, 5%);
+   height: 400px;
+   width: 400px;
+   border-radius: 20px;
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   h1 {
+    color: $white;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+   }
+}
+
+.ratingContainer {
+   .star {
+      background-color: $darkBlue;
+      border-radius: 50%;
+      padding: 15px;
+      width: fit-content;
+      margin: 0 0 20px 0;
+   }
+
+   .ratingNumbersContainer {
+      margin: 20px 0;
+
+      form {
+         display: flex;
+         flex-direction: column;
+
+         label {
+            display: flex;
+            align-items: center;
+            color: $mediumGrey;
+
+            span:first-of-type {
+               position: relative;
+               left: -50%;
+            }
+
+            &:hover {
+               color: $white;
+            }
+         }
+
+         div {
+            padding: 0px 0px 20px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+
+            input[type='radio'] {
+               -webkit-appearance: none;
+               background-color: $darkBlue;
+               border-radius: 50%;
+               height: 50px;
+               width: 50px;
+               margin: 0 5px;
+               cursor: pointer;
+
+               &:hover {
+                  background-color: $lightGrey;
+               }
+
+               &:checked {
+                  background-color: $orange;
+               }
+
+               &:checked ~ span:first-of-type {
+                  color: $white;
+               }
+            }
+         }
+
+         input[type='submit'] {
+            font-family: 'Overpass';
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            background-color: $orange;
+            color: $white;
+            border: none;
+            border-radius: 30px;
+            padding: 10px;
+            letter-spacing: 2px;
+            cursor: pointer;
+         }
+
+         input[type='submit']:hover {
+            background-color: $white;
+            color: $orange;
+         }
+      }
+   }
+}
+
+.thankYouContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    * {
+        margin: 10px 0;
+    }
+
+    .rating {
+        background-color: $darkBlue;
+        padding: 10px 20px;
+        border-radius: 30px;
+        color: lighten($orange, 5%);
+    }
+
+    p {
+        text-align: center;
+    }
+}
