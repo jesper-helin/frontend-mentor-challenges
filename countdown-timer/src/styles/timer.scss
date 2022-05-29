@@ -1,0 +1,55 @@
+@import './variables';
+
+.timer-container {
+   display: flex;
+
+   > * {
+      margin: 20px;
+   }
+
+   .text {
+      margin: 20px 0;
+      text-align: center;
+      text-transform: uppercase;
+      color: $grayishBlue;
+   }
+}
+
+// ========================================================
+// Gradient generation
+$list1: $softRed 0%, $softRed 50%, $veryDarkBlue 51%,
+   mix($softRed, $darkDesaturatedBlue) 50%,
+   mix($softRed, $darkDesaturatedBlue) 66%;
+$list2: $darkDesaturatedBlue 0%, $darkDesaturatedBlue 50%, $veryDarkBlue 51%,
+   darken($darkDesaturatedBlue, 5%) 50%, darken($darkDesaturatedBlue, 5%) 66%;
+
+@mixin gradientBg($direction, $list) {
+   background: -webkit-linear-gradient($direction, $list);
+   background: -moz-linear-gradient($direction, $list);
+   background: -o-linear-gradient($direction, $list);
+   background: linear-gradient($direction, $list);
+}
+
+// ========================================================
+
+.time-container {
+   width: 200px;
+   height: 200px;
+   @include gradientBg(to top, $list2);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 8em;
+   //    -webkit-text-fill-color: $softRed;
+   //    color: $softRed;
+   //    background-clip: text;
+   border-radius: 20px;
+   box-shadow: 0px 10px 0 $veryDarkBlue2;
+
+   span {
+      @include gradientBg(to top, $list1);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+   }
+}

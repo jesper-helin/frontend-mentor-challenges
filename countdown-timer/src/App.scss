@@ -1,0 +1,13 @@
+@import './styles/variables';
+
+.app {
+  height: 100%;
+}
+
+main {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
