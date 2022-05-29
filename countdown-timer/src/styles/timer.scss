@@ -33,6 +33,7 @@ $list2: $darkDesaturatedBlue 0%, $darkDesaturatedBlue 50%, $veryDarkBlue 51%,
 // ========================================================
 
 .time-container {
+   position: relative;
    width: 200px;
    height: 200px;
    @include gradientBg(to top, $list2);
@@ -40,16 +41,33 @@ $list2: $darkDesaturatedBlue 0%, $darkDesaturatedBlue 50%, $veryDarkBlue 51%,
    justify-content: center;
    align-items: center;
    font-size: 8em;
-   //    -webkit-text-fill-color: $softRed;
-   //    color: $softRed;
-   //    background-clip: text;
    border-radius: 20px;
    box-shadow: 0px 10px 0 $veryDarkBlue2;
+   overflow: hidden;
 
-   span {
-      @include gradientBg(to top, $list1);
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
+   &::after,
+   &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-color: $veryDarkBlue2;
+      border-radius: 50%;
    }
+
+   &::before {
+      position: absolute;
+      left: -10px;
+   }
+
+   &::after {
+      position: absolute;
+      right: -10px;
+   }
+}
+
+span {
+   @include gradientBg(to top, $list1);
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
 }

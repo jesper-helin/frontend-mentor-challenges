@@ -1,13 +1,28 @@
 @import './styles/variables';
 
 .app {
-  height: 100%;
+   height: 100%;
 }
 
 main {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+   height: 70%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+footer {
+   // width: 100%;
+   height: 288px;
+   background-image: url('../public/pattern-hills.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   path:hover {
+      fill: $softRed;
+   }
 }
