@@ -1,0 +1,18 @@
+.nav {
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;
+    width: 1385px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
