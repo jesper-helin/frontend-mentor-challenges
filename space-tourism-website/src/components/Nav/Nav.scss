@@ -1,3 +1,5 @@
+@import '../../styles/variable';
+
 .nav {
     position: absolute;
     top: 40px;
@@ -6,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     height: 96px;
-    width: 1385px;
+    width: calc(100vw - 55px);
     font-size: 16px;
     letter-spacing: 2.7px;
 }
@@ -14,5 +16,22 @@
 .nav-list {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    width: min(1000px, calc(70% - 55px));
+    background: rgba($tertiary-color, 4%);
+    backdrop-filter: blur(10px);
+    height: 100%;
+
+    strong {
+        font-weight: bold;
+    }
+
+    .nav-item {
+        list-style-type: none;
+
+        > a {
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
 }
