@@ -2,7 +2,7 @@ import './Home.scss';
 
 const Home = () => {
    return (
-      <div className="home">
+      <div className="home-page">
          <div className="home-introduction-text">
             <h5>So, you want to travel to</h5>
             <h1>Space</h1>

@@ -1,0 +1,31 @@
+@import '../../styles/variable';
+
+.planet-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around   ;
+    width: 445px;
+    height: 472px;
+}
+
+.planet-information-line {
+    width: calc(100% - 48px - 830px);
+    height: 1px;
+    width: 100%;
+    background-color: rgba($secondary-color, 40%);
+}
+
+.planet-additional-information {
+    display: flex;
+    justify-content: flex-start;
+    
+    > div {
+        display: flex;
+        padding: 0 80px 0 0;
+        flex-direction: column;
+
+        > :first-child {
+            padding-bottom: 15px;
+        }
+    }
+}

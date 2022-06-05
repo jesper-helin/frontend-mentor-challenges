@@ -1,0 +1,17 @@
+@import './styles/variable';
+
+h5 {
+    > * {
+        padding: 0px 25px 0 0;
+    }
+
+    strong {
+        font-size: 28px;
+        color: rgba($tertiary-color, 25%);
+    }
+}
+
+strong {
+    font-family: 'Barlow Condensed', serif;
+    font-weight: bold;
+}
