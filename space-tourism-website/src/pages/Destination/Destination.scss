@@ -11,13 +11,18 @@
    position: absolute;
    top: 21%;
    left: 13%;
+
+   h5 {
+      width: fit-content;
+   }
 }
 
 .planet-data {
    margin: 100px 0;
    display: flex;
-   width: 1047px;
-   justify-content: space-between;
+   width: 80vw;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
 }
 
 .planet-selector-container {
@@ -66,6 +71,37 @@
       background: url('../../assets/destination/background-destination-tablet.jpg')
          no-repeat;
       background-size: cover;
+   }
+
+   .destination-page-content {
+      left: 55px;
+      top: 150px;
+      
+      h5,
+      strong {
+         font-size: 20px;
+      }
+   }
+
+   .planet-image img {
+      width: 300px;
+      height: 300px;
+   }
+
+   .planet-data {
+      width: 573px;
+      margin: 50px 0 0 0;
+      flex-direction: column;
+   }
+
+   .planet-information {
+      h2 {
+         font-size: 80px;
+      }
+
+      p {
+          font-size: 16px;
+      }
    }
 }
 
