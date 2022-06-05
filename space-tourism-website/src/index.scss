@@ -39,6 +39,7 @@ h5 {
   font-family: 'Barlow Condensed', serif;
   font-size: 28px;
   letter-spacing: 4.75px;
+  color: $secondary-color;
 }
 
 .subHeading1 {
@@ -49,4 +50,14 @@ h5 {
   font-family: 'Barlow Condensed', serif;
   font-size: 14px;
   letter-spacing: 2.35px;
+}
+
+h1, h2,h3, h4, h5, .subHeading1, .subHeading2 {
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Barlow Condensed', serif;
+  color: $secondary-color;
+  font-size: 18px;
 }
