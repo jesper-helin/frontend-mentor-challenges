@@ -1,26 +1,33 @@
 import logo from '../../assets/shared/logo.svg';
+import hamburger from '../../assets/shared/icon-hamburger.svg';
+import close from '../../assets/shared/icon-close.svg';
 import './Nav.scss';
-import { Link } from 'react-router-dom';
+import NavItems from './NavItems';
 
 const Nav = () => (
    <nav className="nav">
       <div className="logo">
          <img src={logo} alt="logo" />
       </div>
-      <ul className="nav-list">
-         <li className="nav-item">
-            <Link to="/"><strong>00</strong> Home</Link>
-         </li>
-         <li className="nav-item">
-            <Link to="/destination"><strong>01</strong> Destination</Link>
-         </li>
-         <li className="nav-item">
-            <Link to="/crew"><strong>02</strong> Crew</Link>
-         </li>
-         <li className="nav-item">
-            <Link to="/technology"><strong>03</strong> Technology</Link>
-         </li>
-      </ul>
+      <div className="nav-line"></div>
+      <div className="nav-list">
+         <NavItems />
+      </div>
+      <div className="mobile-nav-list">
+         <input
+            type="checkbox"
+            id="change-hamburger"
+            className="change-hamburger"
+         />
+         <div className="hamburger">
+            <img src={close} alt="close" className='close-icon' />
+            <img src={hamburger} alt="hamburger" className='hamburger-icon' />
+            <label htmlFor="change-hamburger"></label>
+         </div>
+         <div className="mobile-nav-list-items">
+            <NavItems />
+         </div>
+      </div>
    </nav>
 );
 
