@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/';
 import Destination from './pages/Destination';
 import { useState, useEffect } from 'react';
+import Crew from './pages/Crew';
 
 const App = () => {
    const [data, setData] = useState([]);
@@ -39,6 +40,19 @@ const App = () => {
                            </h5>
                         }
                         data={data.destinations}
+                     />
+                  }
+               ></Route>
+               <Route
+                  path="crew"
+                  element={
+                     <Crew
+                        pageHeading={
+                           <h5>
+                              <strong>02</strong>Meet your crew
+                           </h5>
+                        }
+                        data={data.crew}
                      />
                   }
                ></Route>

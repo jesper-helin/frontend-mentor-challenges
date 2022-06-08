@@ -1,6 +1,6 @@
 # Frontend Mentor - Space tourism website solution
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
 
 ## Table of contents
 
@@ -55,11 +55,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-During this project, I got more familiar with a creating routing for pages. Responsivity is a key part of a website, and it's important to make sure that the pages are responsive to the user's device. This was one of the bigger projects I undertook, and I learned a lot about how to create a responsive website
+During this project, I got more familiar with a creating routing for pages. I learned the importance of going **mobile** first, and adding to the page after that, rather than the other way around. That's solely the reason why this page is optimized for desktop. 
 
 ### Continued development
 
-Going forward, I plan on taking larger projects, that require thinking in advance about the layout and design of the website. I feel like I didn't use SASS to its fullest, but I'll be sure to practice it to reach the full potential of it.
+Going forward, I plan on taking larger projects, that require thinking in advance about the layout and design of the website. I'm going to start working first on smaller screen sizes, and only after that will I move on to bigger screen sizes. I feel like I didn't use SASS to its fullest, but I'll be sure to practice it to reach the full potential of it.
 
 ### Useful resources
 

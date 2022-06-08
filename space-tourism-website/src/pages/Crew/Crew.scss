@@ -1,0 +1,40 @@
+@import '../../styles/variable';
+
+.crew-page {
+   height: 100vh;
+   background: url('../../assets/crew/background-crew-desktop.jpg') no-repeat;
+   background-size: cover;
+}
+
+.crew-page-content {
+   position: absolute;
+   top: 21%;
+   left: 13%;
+
+   h5 {
+      width: fit-content;
+   }
+}
+
+.crew-data {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+@media (max-width: $breakpoint-tablet) {
+   .crew-page {
+      background: url('../../assets/crew/background-crew-tablet.jpg') no-repeat;
+      background-size: cover;
+   }
+}
+
+@media (max-width: $breakpoint-mobile) {
+   .crew-page {
+      background: url('../../assets/crew/background-crew-mobile.jpg') no-repeat;
+      background-size: cover;
+   }
+}

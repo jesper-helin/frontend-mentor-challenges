@@ -1,0 +1,19 @@
+@import '../../styles/variable';
+
+.crew-information {
+    width: 488px;
+
+    >* {
+        padding: 0px 0 25px 0;
+    }
+    h4 {
+        color: rgba($tertiary-color, 50%);
+    }
+}
+
+.crew-image {
+    display: flex;
+    align-items: flex-end;
+
+
+}
