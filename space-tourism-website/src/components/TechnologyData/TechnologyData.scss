@@ -1,0 +1,47 @@
+@import '../../styles/variable';
+
+.technology-information {
+   width: 470px;
+
+   h4 {
+      all: unset;
+      position: relative;
+      font-family: 'Barlow Condensed', serif;
+      font-size: 16px;
+      letter-spacing: 2.7px;
+      color: #d0d6f9;
+      cursor: pointer;
+   }
+}
+
+.technology-selection-buttons {
+   all: unset;
+   display: flex;
+   flex-direction: column;
+   height: 304px;
+   justify-content: space-around;
+
+   .technology-selector-button {
+      all: unset;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary-color;
+      border: rgba($tertiary-color, 20%) solid 0.5px;
+      border-radius: 50%;
+      font-size: 32px;
+      font-family: 'Bellefair', serif;
+      cursor: pointer;
+
+      &:hover {
+          border: $tertiary-color solid 0.5px;
+      }
+
+        &:active {
+            background-color: $tertiary-color;
+            color: $primary-color;
+        }
+   }
+}

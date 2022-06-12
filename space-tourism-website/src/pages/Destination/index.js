@@ -9,17 +9,15 @@ const Destination = ({ pageHeading, data }) => {
       <div className="destination-page">
          <div className="destination-page-content">
             {pageHeading}
-            <div className='planet-selector-container'>
+            <div className="planet-selector-container">
                {data.map((planet, index) => (
-                  <>
-                     <button
-                        onClick={(e) => setSelectedPlanet(index)}
-                        key={index}
-                        className="planet-selector-button"
-                     >
-                        {planet.name}
-                     </button>
-                  </>
+                  <button
+                     onClick={(e) => setSelectedPlanet(index)}
+                     key={index}
+                     className="planet-selector-button"
+                  >
+                     {planet.name}
+                  </button>
                ))}
             </div>
             <div className="planet-data">

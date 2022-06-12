@@ -5,6 +5,7 @@ import Home from './pages/Home/';
 import Destination from './pages/Destination';
 import { useState, useEffect } from 'react';
 import Crew from './pages/Crew';
+import Technology from './pages/Technology';
 
 const App = () => {
    const [data, setData] = useState([]);
@@ -53,6 +54,19 @@ const App = () => {
                            </h5>
                         }
                         data={data.crew}
+                     />
+                  }
+               ></Route>
+               <Route
+                  path="technology"
+                  element={
+                     <Technology
+                        pageHeading={
+                           <h5>
+                              <strong>03</strong> Space launch 101
+                           </h5>
+                        }
+                        data={data.technology}
                      />
                   }
                ></Route>

@@ -8,7 +8,16 @@ const Crew = ({ pageHeading, data }) => {
       <div className="crew-page">
          <div className="crew-page-content">{pageHeading}</div>
          <div className="crew-data">
-            <CrewData data={data[selectedCrew]} />
+            <CrewData
+               data={data[selectedCrew]}
+               crewChange={data.map((crew, index) => (
+                  <button
+                     onClick={(e) => setSelectedCrew(index)}
+                     key={index}
+                     className="crew-selector-button"
+                  ></button>
+               ))}
+            />
          </div>
       </div>
    );

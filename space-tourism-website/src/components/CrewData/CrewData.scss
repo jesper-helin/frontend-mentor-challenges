@@ -1,19 +1,42 @@
 @import '../../styles/variable';
 
 .crew-information {
-    width: 488px;
+   width: 488px;
 
-    >* {
-        padding: 0px 0 25px 0;
-    }
-    h4 {
-        color: rgba($tertiary-color, 50%);
-    }
+   > * {
+      padding: 0px 0 25px 0;
+   }
+   h4 {
+      color: rgba($tertiary-color, 50%);
+   }
 }
 
 .crew-image {
-    display: flex;
-    align-items: flex-end;
+   display: flex;
+   align-items: flex-end;
+}
 
+.crew-selection-buttons {
+   display: flex;
+   justify-content: space-between;
+   width: 132px;
+   height: 15px;
+   padding: 125px 0 0 0;
 
+   .crew-selector-button {
+      all: unset;
+      width: 15px;
+      height: 15px;
+      background-color: rgba($tertiary-color, 17%);
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+         background-color: rgba($tertiary-color, 50%);
+      }
+      
+      &:active {
+         background-color: $tertiary-color;
+      }
+   }
 }

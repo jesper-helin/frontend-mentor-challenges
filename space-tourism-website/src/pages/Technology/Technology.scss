@@ -1,0 +1,47 @@
+@import '../../styles/variable';
+
+.technology-page {
+   height: 100vh;
+   background: url('../../assets/technology/background-technology-desktop.jpg')
+      no-repeat;
+   background-size: cover;
+}
+
+.technology-page-content {
+   position: absolute;
+   top: 21%;
+   left: 13%;
+
+   h5 {
+      width: fit-content;
+   }
+}
+
+.technology-data {
+    position: absolute;
+    bottom: 150px;
+    right: 0;
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+// -----------------------------------------------------------------------------
+// Tablet
+@media (max-width: $breakpoint-tablet) {
+   .technology-page {
+      background: url('../../assets/technology/background-technology-tablet.jpg')
+         no-repeat;
+      background-size: cover;
+   }
+}
+// -----------------------------------------------------------------------------
+// Mobile
+@media (max-width: $breakpoint-mobile) {
+   .technology-page {
+      background: url('../../assets/technology/background-technology-mobile.jpg')
+         no-repeat;
+      background-size: cover;
+   }
+}

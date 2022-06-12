@@ -1,7 +1,7 @@
 import './CrewData.scss';
 import { useState, useEffect } from 'react';
 
-const CrewData = ({ data }) => {
+const CrewData = ({ data, crewChange }) => {
    const [image, setImage] = useState();
 
    const loadImage = async (imageName) => {
@@ -19,9 +19,8 @@ const CrewData = ({ data }) => {
          <div className="crew-information">
             <h4>{data.role}</h4>
             <h3>{data.name}</h3>
-            <p>
-                {data.bio}
-            </p>
+            <p>{data.bio}</p>
+            <div className='crew-selection-buttons'>{crewChange}</div>
          </div>
          <div className="crew-image">
             <img src={image} alt={data.name} />
