@@ -30,9 +30,9 @@ const App = () => {
          <Nav />
          {data.length === 0 ? null : (
             <Routes>
-               <Route path="/" element={<Home />}></Route>
+               <Route path="/space-tourism/" element={<Home />}></Route>
                <Route
-                  path="/destination"
+                  path="/space-tourism/destination"
                   element={
                      <Destination
                         pageHeading={
@@ -45,7 +45,7 @@ const App = () => {
                   }
                ></Route>
                <Route
-                  path="crew"
+                  path="/space-tourism/crew"
                   element={
                      <Crew
                         pageHeading={
@@ -58,7 +58,7 @@ const App = () => {
                   }
                ></Route>
                <Route
-                  path="technology"
+                  path="/space-tourism/technology"
                   element={
                      <Technology
                         pageHeading={
