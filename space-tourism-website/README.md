@@ -2,6 +2,8 @@
 
 This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
 
+**Note that this page is optimized for desktop with the width of 1440px. Only the landing page is responsive.**
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -12,11 +14,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -24,7 +22,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 Users should be able to:
 
-- View the optimal layout for each of the website's pages depending on their device's screen size
+- ~~View the optimal layout for each of the website's pages depending on their device's screen size~~
 - See hover states for all interactive elements on the page
 - View each page and be able to toggle between the tabs to see new information
 
