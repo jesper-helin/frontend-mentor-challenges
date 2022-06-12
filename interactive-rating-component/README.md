@@ -1,6 +1,8 @@
 # Frontend Mentor - Interactive rating component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). 
+
+**Note: currently not live**
 
 ## Table of contents
 
@@ -10,7 +12,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Links](#links)
   - [Built with](#built-with)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -30,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [jesper-helin.github.io/rating_component/](https://jesper-helin.github.io/rating_component/)
+- Live Site URL: [jesper-helin.github.io/rating_component/](https://jesper-helin.github.io/interactive-rating/)
 
 ### Built with
 
